@@ -43,9 +43,9 @@ export function enemySpawnSystem(dt: number) {
                     const r3 = Math.random()
                     const r4 = Math.random()
                     const sqrtR2 = Math.sqrt(r3)
-                    const pointD = [5.514, -1.06]
+                    const pointD = [5.514, 1.06]
                     const pointE = [0, 1.289]
-                    const pointF = [-5.514, -0.206]
+                    const pointF = [-5.514, 0.206]
                     x =
                         spawnerTransform.position.x +
                         (1 - sqrtR2) * pointD[0] +
@@ -63,9 +63,9 @@ export function enemySpawnSystem(dt: number) {
                     const r1 = Math.random()
                     const r2 = Math.random()
                     const sqrtR1 = Math.sqrt(r1)
-                    const pointA = [4.514, -1.06]
+                    const pointA = [4.514, 1.06]
                     const pointB = [0, 1.289]
-                    const pointC = [-4.514, -0.206]
+                    const pointC = [-4.514, 0.206]
                     x =
                         spawnerTransform.position.x +
                         (1 - sqrtR1) * pointA[0] +

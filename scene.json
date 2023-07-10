@@ -1,15 +1,18 @@
 {
 	"ecs7": true,
 	"runtimeVersion": "7",
+	"worldConfiguration" : {
+		"name": "FluffyCat.dcl.eth"
+	  },
 	"display": {
-	  "title": "enemy-spawner",
-	  "description": "Test",
+	  "title": "FluffyCat",
+	  "description": "FluffyCat Game",
 	  "navmapThumbnail": "images/scene-thumbnail.png",
 	  "favicon": "favicon_asset"
 	},
 	"owner": "",
 	"contact": {
-	  "name": "Lean",
+	  "name": "Dogman",
 	  "email": ""
 	},
 	"main": "bin/game.js",
