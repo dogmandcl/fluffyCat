@@ -35,7 +35,7 @@ export function spawnEnemy(shape: ShipShapes, x: number, y: number, z: number): 
 
 
     utils.timers.setTimeout(
-  function() {const coin = createCoin('models/coin.glb', Vector3.create(x, y, z), Vector3.create(1.5, 3, 1.5), Vector3.create(0, 1, 0))
+  function() {const coin = createCoin('models/BIRD.glb', Vector3.create(x, y, z), Vector3.create(1.5, 3, 1.5), Vector3.create(0, 1, 0))
   MoveTransformComponent.create(coin, {
     start: { x: x, y: y +1 , z: z },
     end: { x: x, y: y + 1, z: z - TRAVEL_DISTANCE },

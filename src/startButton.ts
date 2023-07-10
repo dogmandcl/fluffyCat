@@ -26,7 +26,7 @@ export var MAX_TIME_OFFSET = 3
 let gameSecs = 0
 const gameOverSound = engine.addEntity()
 Transform.create(gameOverSound)
-AudioSource.create(gameOverSound, { audioClipUrl: 'sounds/gameOver.mp3' })
+AudioSource.create(gameOverSound, { audioClipUrl: 'sounds/gameOver.wav' })
 
 const gameSound = engine.addEntity()
 Transform.create(gameSound)

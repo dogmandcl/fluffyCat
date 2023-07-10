@@ -9,7 +9,7 @@ import { score } from './UI'
  */
 const coinPickupSound = engine.addEntity()
 Transform.create(coinPickupSound)
-AudioSource.create(coinPickupSound, { audioClipUrl: 'sounds/coinPickup.mp3' })
+AudioSource.create(coinPickupSound, { audioClipUrl: 'sounds/bird.wav' })
 
 
 export function createCoin(model: string, position: Vector3, size: Vector3, centerOffset: Vector3): Entity {
