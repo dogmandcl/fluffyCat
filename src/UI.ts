@@ -99,10 +99,10 @@ const gameOver = ui.createComponent(ui.CenterImage, {
   })
 
 
-  const instruct = ui.createComponent(ui.CenterImage, {
+  export const instruct = ui.createComponent(ui.CenterImage, {
     image: 'images/info.png',
-    duration: 15,
-    startHidden: false,
+    duration: 3,
+    startHidden: true,
     xOffset: 0,
     yOffset: -200,
     width: 450,
@@ -152,6 +152,16 @@ const gameOver = ui.createComponent(ui.CenterImage, {
         atlasHeight: 1000,
       },
     startHidden: false,
+  })
+
+  const announcement = ui.createComponent(ui.Announcement, {
+    value: 'Press the green cat ball to start game! \n After you start press E to fly upwards!!',
+    startHidden: false,
+    duration: 7,
+    color: Color4.Green(),
+    size: 50,
+    xOffset: 0,
+    yOffset: -300,
   })
 
 

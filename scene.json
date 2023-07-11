@@ -22,9 +22,9 @@
 		"name": "spawn1",
 		"default": true,
 		"position": {
-		  "x": 0,
+		  "x": 13,
 		  "y": 0,
-		  "z": 0
+		  "z": 45
 		},
 		"cameraTarget": {
 		  "x": 8,
@@ -35,7 +35,12 @@
 	],
 	"requiredPermissions": [
 	  "ALLOW_TO_TRIGGER_AVATAR_EMOTE",
-	  "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"
+	  "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE",
+	  "ALLOW_MEDIA_HOSTNAMES"
+
+	],
+	"allowedMediaHostnames": [
+		"decentraland.org"
 	],
 	"featureToggles": {},
 	"scene": {
@@ -51,5 +56,5 @@
 		"75,-6"
 	  ]
 	},
-	"name": "enemy-spawner"
+	"name": "fluffCat"
   }

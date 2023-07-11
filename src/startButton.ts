@@ -14,7 +14,7 @@ import {
 import { Color4, Vector3 } from '@dcl/sdk/math'
 import { enemySpawnSystem } from './systems/enemySpawner'
 import { movePlayerTo } from '~system/RestrictedActions'
-import { deathScores, highscore, score } from './UI'
+import { deathScores, highscore, instruct, score } from './UI'
 import * as utils from '@dcl-sdk/utils'
 
 
@@ -101,6 +101,8 @@ export function grabbingSystem() {
             if (grabbed) {
                 Transform.getMutable(gameSound).position = Transform.get(engine.PlayerEntity).position
                 AudioSource.getMutable(gameSound).playing = true
+
+                instruct.show()
           
 
                 movePlayerTo({
@@ -149,9 +151,11 @@ export function endGame() {
 
     Transform.getMutable(gameOverSound).position = Transform.get(engine.PlayerEntity).position
       AudioSource.getMutable(gameOverSound).playing = true
+      instruct.hide()
+      
 
     movePlayerTo({
-        newRelativePosition: Vector3.create(18, 5, -12),
+        newRelativePosition: Vector3.create(15, 5, 41),
         cameraTarget: Vector3.create(16, 1, 14),
     })
     engine.removeSystem(enemySpawnSystem)

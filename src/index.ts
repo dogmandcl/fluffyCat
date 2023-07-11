@@ -9,11 +9,8 @@ import { moveSystem } from './systems/moveEnemy'
 import { initUI } from './UI'
 import { createSkybox } from './skybox'
 import { createFlyArea } from './flightBox'
-
-
-createSkybox()
-
-
+import { newNPC } from './npc'
+import { setupUi } from './setupUI'
 
 
 
@@ -30,7 +27,13 @@ export function main() {
   GltfContainer.create(ground, {
     src: 'models/grass.glb'
   })
+  createSkybox()
 
+
+
+  newNPC()
+  setupUi()
+  
   
 initUI()
 
@@ -54,7 +57,7 @@ initUI()
   // Register avatar swapping system
   engine.addSystem(avatarSwappingSystem)
 
-  const crate1 = createCreate(Vector3.create(16, 1.5, -10))
+  const crate1 = createCreate(Vector3.create(16, 1.5, 38))
 
   // Portals
   const POSITION_Z = 30
