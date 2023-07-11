@@ -10,7 +10,7 @@ import { initUI } from './UI'
 import { createSkybox } from './skybox'
 import { createFlyArea } from './flightBox'
 import { newNPC } from './npc'
-import { setupUi } from './setupUI'
+
 
 
 
@@ -32,7 +32,7 @@ export function main() {
 
 
   newNPC()
-  setupUi()
+ 
   
   
 initUI()
