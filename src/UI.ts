@@ -157,7 +157,7 @@ const gameOver = ui.createComponent(ui.CenterImage, {
   const announcement = ui.createComponent(ui.Announcement, {
     value: 'Press the green cat ball to start game! \n After you start press E to fly upwards!!',
     startHidden: false,
-    duration: 7,
+    duration: 8,
     color: Color4.Green(),
     size: 50,
     xOffset: 0,
