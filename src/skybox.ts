@@ -99,7 +99,7 @@ export function createSkybox(){
 	const sbox = engine.addEntity()
 	Transform.create(sbox, {
 	  position: Vector3.create(16,16,10),
-	  scale: Vector3.create(2, 3, 3)
+	  scale: Vector3.create(2, 3, 4)
 	})
 	GltfContainer.create(sbox, {
 	  src: 'models/skybox.glb'
